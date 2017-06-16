@@ -18,8 +18,15 @@
           query: {
             locale: 'en', q: 100
           },
-          hash: '#data' 
+          hash: '#data'
         }
+      }
+    },
+    beforeRouteEnter(to, from, next) {
+      if (true) {
+        next();
+      } else {
+        next(false);
       }
     }
   }
